@@ -41,6 +41,10 @@
     border-radius: 10px;
 }
 
+.icon-home3:before {
+    content: "\e902";
+}
+
 .text-gray-t {
     --tw-text-opacity: 1;
     color: rgb(58 68 81 / var(--tw-text-opacity));

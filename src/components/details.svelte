@@ -76,10 +76,10 @@
     </div>
     <div class="flex flex-row basis-1/6 items-center justify-center">
       <div class="basis-1/4"></div>
-      <button class="w-1/4 h-1/2 rounded m-2 bg-white text-slate-800 text-sm ">
+      <button class="w-1/4 h-1/2 rounded m-2 bg-white text-slate-800 text-sm hover:bg-sky-500">
         SAVE
       </button>
-      <button class="w-1/4 h-1/2 rounded m-2 bg-white text-slate-800 text-sm hover:h-150 hover:bg-sky-500">
+      <button class="w-1/4 h-1/2 rounded m-2 bg-white text-slate-800 text-sm hover:bg-sky-500">
         PREVIEW
       </button>
       <div class="basis-1/4"></div>
