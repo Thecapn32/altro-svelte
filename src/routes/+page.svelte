@@ -15,10 +15,9 @@
     <Details />
     <div class="flex flex-row h-1/3 w-full">
       <TableCsv />
-      <div class="basis-1/12"></div>
-      <div class="basis-1/12"></div>
+      <div class="basis-1/12" />
+      <div class="basis-1/12" />
       <DisplayOption />
     </div>
   </div>
 </div>
-

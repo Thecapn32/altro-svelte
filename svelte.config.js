@@ -1,5 +1,13 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
+
+export default {
+    kit: {
+        adapter: adapter({
+            fallback: 'index.html' // may differ from host to host
+        })
+    }
+};
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,4 +23,4 @@ const config = {
 	}
 };
 
-export default config;
+
