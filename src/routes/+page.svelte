@@ -3,6 +3,8 @@
   import Nav from "../components/nav.svelte";
   import DisplayOption from "../components/displayOption.svelte";
   import TableCsv from "../components/tableCSV.svelte";
+
+  let dispOption = "";
 </script>
 
 <div id="whpage" class="flex flex-row sd:flex-col gap-20 h-screen w-screen p-5">
@@ -12,12 +14,12 @@
       <h1 class="text-2xl">Welcome Jess!</h1>
       <h2 class="text-xl">Lorem ipsum dolor sit amet, consectetur</h2>
     </div>
-    <Details />
+    <Details bind:dispOption />
     <div class="flex flex-row h-1/3 w-full">
       <TableCsv />
       <div class="basis-1/12" />
       <div class="basis-1/12" />
-      <DisplayOption />
+      <DisplayOption bind:dispOption/>
     </div>
   </div>
 </div>

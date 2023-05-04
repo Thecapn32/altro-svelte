@@ -1,5 +1,4 @@
 <script>
-    import { page } from "$app/stores";
     import PapaParse from "papaparse";
     import regression from "regression";
 
@@ -110,6 +109,12 @@
         }
     }
 
+    export let dispOption;
+
+    $: {
+        dispOption = pageObj.pos;
+    }
+
     $: {
         // called on props change
         if (dataToCSV !== prevDataToCSV && dataToCSV.length !== 0) {
@@ -184,7 +189,7 @@
         </div>
         <div class="basis-1/2 p-2">
             <label class="block text-sm text-white" for="display-option"
-                >Display Option</label
+                >Unit</label
             >
             <select
                 class="w-3/4 h-3/4 select-box text-white"
